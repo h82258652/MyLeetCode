@@ -16,6 +16,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LeetCode002", "src\LeetCode
 EndProject
 Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "Shared", "src\Shared\Shared.shproj", "{3A780727-B0A6-414C-93F0-9DF3A5641DB8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LeetCode007", "src\LeetCode007\LeetCode007.csproj", "{9413C086-3BA2-4820-A1CC-6E486AA40D66}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -30,6 +32,10 @@ Global
 		{FA6DCB04-2AF6-4E7A-9A16-B327C91F0CA0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FA6DCB04-2AF6-4E7A-9A16-B327C91F0CA0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FA6DCB04-2AF6-4E7A-9A16-B327C91F0CA0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9413C086-3BA2-4820-A1CC-6E486AA40D66}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9413C086-3BA2-4820-A1CC-6E486AA40D66}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9413C086-3BA2-4820-A1CC-6E486AA40D66}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9413C086-3BA2-4820-A1CC-6E486AA40D66}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -38,6 +44,7 @@ Global
 		{AAA11F0B-F655-444E-AB1C-4CEF9F3D2B25} = {BEB4FBBC-BBA4-400E-AF82-F9943453447F}
 		{FA6DCB04-2AF6-4E7A-9A16-B327C91F0CA0} = {BEB4FBBC-BBA4-400E-AF82-F9943453447F}
 		{3A780727-B0A6-414C-93F0-9DF3A5641DB8} = {BEB4FBBC-BBA4-400E-AF82-F9943453447F}
+		{9413C086-3BA2-4820-A1CC-6E486AA40D66} = {BEB4FBBC-BBA4-400E-AF82-F9943453447F}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {F40A2491-5256-4581-A5C4-DBBD5B412780}
