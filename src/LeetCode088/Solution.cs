@@ -1,62 +1,40 @@
-﻿using System;
-
-namespace LeetCode088
+﻿namespace LeetCode088
 {
     public class Solution
     {
         public void Merge(int[] nums1, int m, int[] nums2, int n)
         {
-            int[] result = new int[m + n];
-            int i = 0;
-            int j = 0;
-            int k = 0;
-            while (true)
+            var num1Point = m - 1;// nums1 最后一个元素的位置
+            var num2Point = n - 1;// nums2 最后一个元素的位置
+            var resultPoint = m + n - 1;// 最终结果的最后一个元素的位置
+
+            while (num1Point >= 0 && num2Point >= 0)
             {
-                if (i >= m)
+                var num1 = nums1[num1Point];
+                var num2 = nums2[num2Point];
+                if (num1 <= num2)
                 {
-                    break;
-                }
-
-                if (j >= n)
-                {
-                    break;
-                }
-
-                var num1 = nums1[i];
-                var num2 = nums2[j];
-                if (num1 < num2)
-                {
-                    result[k] = num1;
-                    i++;
-                    k++;
+                    // 如果 num2 的值大于等于 num1 的值，则将 num2 的值放到结果数组指针的位置，并将 nums2 指针和结果数组指针往前移动
+                    nums1[resultPoint] = num2;
+                    num2Point--;
+                    resultPoint--;
                 }
                 else
                 {
-                    result[k] = num2;
-                    j++;
-                    k++;
+                    // 如果 num1 的值大于 num2 的值，则将 num1 的这个值放到结果数组指针的位置，并将 nums1 指针和结果数组指针往前移动
+                    nums1[resultPoint] = num1;
+                    num1Point--;
+                    resultPoint--;
                 }
             }
 
-            if (i < m)
+            // 如果 nums2 的指针大于等于 0，说明 nums2 还有剩余元素没复制到结果数组中
+            while (num2Point >= 0)
             {
-                for (int temp = i; temp < m; temp++)
-                {
-                    result[k] = nums1[temp];
-                    k++;
-                }
+                nums1[resultPoint] = nums2[num2Point];
+                num2Point--;
+                resultPoint--;
             }
-
-            if (j < n)
-            {
-                for (int temp = j; temp < n; temp++)
-                {
-                    result[k] = nums2[temp];
-                    k++;
-                }
-            }
-
-            Array.Copy(result, nums1, m + n);
         }
     }
 }
