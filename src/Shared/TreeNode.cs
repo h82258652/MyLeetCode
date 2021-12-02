@@ -31,7 +31,17 @@ public class TreeNode
             {
                 var node = new TreeNode(val.Value);
                 var parentIndex = (i + 1) / 2;
-                var parent = indexToNodeMap[parentIndex];
+                TreeNode parent;
+                while (true)
+                {
+                    if (indexToNodeMap.TryGetValue(parentIndex, out parent))
+                    {
+                        break;
+                    }
+
+                    parentIndex++;
+                }
+
                 if ((i + 1) % 2 == 0)
                 {
                     // 左节点
