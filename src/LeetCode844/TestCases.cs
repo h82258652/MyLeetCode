@@ -10,11 +10,11 @@ namespace LeetCode844
         [InlineData("ab##", "c#d#", true)]
         [InlineData("a##c", "#a#c", true)]
         [InlineData("a#c", "b", false)]
-        public void Test(string s, string t, bool assertResult)
+        public void Test(string s, string t, bool expected)
         {
             var solution = new Solution();
             var result = solution.BackspaceCompare(s, t);
-            result.Should().Be(assertResult);
+            result.Should().Be(expected);
         }
     }
 }
