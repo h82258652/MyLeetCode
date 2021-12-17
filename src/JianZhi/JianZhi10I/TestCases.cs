@@ -1,7 +1,7 @@
 ﻿using FluentAssertions;
 using Xunit;
 
-namespace JianZhi10
+namespace JianZhi10I
 {
     public class TestCases
     {

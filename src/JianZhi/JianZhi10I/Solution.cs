@@ -1,4 +1,4 @@
-﻿namespace JianZhi10
+﻿namespace JianZhi10I
 {
     public class Solution
     {
