@@ -4,6 +4,13 @@ namespace JianZhi58II
 {
     public class Solution
     {
+        /// <summary>
+        /// 时间复杂度 O(s)
+        /// 空间复杂度 O(s)
+        /// </summary>
+        /// <param name="s"></param>
+        /// <param name="n"></param>
+        /// <returns></returns>
         public string ReverseLeftWords(string s, int n)
         {
             var length = s.Length;
