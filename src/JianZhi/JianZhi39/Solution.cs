@@ -5,6 +5,12 @@ namespace JianZhi39
 {
     public class Solution
     {
+        /// <summary>
+        /// 时间复杂度 O(n)
+        /// 空间复杂度 O(n)
+        /// </summary>
+        /// <param name="nums"></param>
+        /// <returns></returns>
         public int MajorityElement(int[] nums)
         {
             var length = nums.Length;
